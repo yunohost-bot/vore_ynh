@@ -19,20 +19,24 @@ ynh_script_progression --message="Stopping a systemd service..." --weight=1
 ynh_systemd_action --service_name=$app --action="stop" --log_path="/var/log/$app/$app.log"
 
 #=================================================
-# "REBUILD" THE APP (DEPLOY NEW SOURCES, RERUN NPM BUILD...)
+# BUILD APP
 #=================================================
-# DOWNLOAD, CHECK AND UNPACK SOURCE
-#=================================================
+ynh_script_progression --message="Building app..." --weight=1
 
 if [ "$upgrade_type" == "UPGRADE_APP" ]
 then
-	ynh_script_progression --message="Upgrading source files..." --weight=1
+	ynh_exec_warn_less ynh_install_go --go_version=$go_version
+	ynh_use_go
 
-	# Download, check integrity, uncompress and patch the source from app.src
-	ynh_setup_source --dest_dir="$install_dir"
+	pushd $install_dir
+		git pull https://git.j3s.sh/vore "$install_dir" --quiet
+		ynh_add_config --template="../conf/index.tmpl.html" --destination="$install_dir/files/index.tmpl.html"
+		ynh_exec_warn_less ynh_exec_as $app CGO_ENABLED=0 $ynh_go build -o $install_dir/
+	popd
+
+	chown -R $app:www-data "$install_dir"
+	chmod +x "$install_dir/vore"
 fi
-
-chown -R $app:www-data "$install_dir"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
