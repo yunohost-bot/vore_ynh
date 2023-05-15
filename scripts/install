@@ -20,7 +20,7 @@ ynh_script_progression --message="Setting up source files..." --weight=1
 ynh_remove_go
 mkdir -p "$install_dir"
 
-git clone https://git.j3s.sh/vore "$install_dir" --quiet
+ynh_exec_warn_less git clone https://git.j3s.sh/vore "$install_dir" --quiet
 ynh_add_config --template="../conf/index.tmpl.html" --destination="$install_dir/files/index.tmpl.html"
 
 chmod -R o-rwx "$install_dir"
