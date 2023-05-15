@@ -24,8 +24,6 @@ A simple, multi-tenant feed reader
 - minimal, simple, reliable, fast
 - refresh your feeds automatically
 - display a chronological list of feed items
-- open source & free of charge forever
-
 
 
 **Shipped version:** 2023.05.15~ynh1
