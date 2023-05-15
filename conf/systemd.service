@@ -1,5 +1,5 @@
 [Unit]
-Description=Vore
+Description=Vore: Multi-tenant feed reader
 After=network.target
 
 [Service]
