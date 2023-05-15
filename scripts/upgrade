@@ -29,6 +29,7 @@ then
 	ynh_use_go
 
 	pushd $install_dir
+		git config --global --add safe.directory $install_dir
 		git pull https://git.j3s.sh/vore "$install_dir" --quiet
 		ynh_add_config --template="../conf/index.tmpl.html" --destination="$install_dir/files/index.tmpl.html"
 		ynh_exec_warn_less ynh_exec_as $app CGO_ENABLED=0 $ynh_go build -o $install_dir/
