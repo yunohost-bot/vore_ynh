@@ -1,0 +1,47 @@
+packaging_format = 2
+
+id = "vore"
+name = "Vore"
+description.en = "Simple, multi-tenant feed reader"
+description.fr = "Lecteur de flux simple et multi-utilisateurs"
+
+version = "2023.05.15~ynh1"
+
+maintainers = [""]
+
+[upstream]
+license = "free"
+website = "https://git.j3s.sh/vore"
+demo = "https://vore.website/j3s"
+admindoc = "https://j3s.sh/thought/vore-a-new-rss-feed-reader.html"
+code = "https://git.j3s.sh/vore/tree/main/"
+
+[integration]
+yunohost = ">= 11.1.19"
+architectures = "all"
+multi_instance = true
+ldap = false
+sso = false
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+[resources]
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.ports]
+    main.default = 5544
+
+    [resources.permissions]
+    main.url = "/"

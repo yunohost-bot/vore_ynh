@@ -1,0 +1,69 @@
+#!/bin/bash
+
+#=================================================
+# GENERIC START
+#=================================================
+# IMPORT GENERIC HELPERS
+#=================================================
+
+source _common.sh
+source ynh_install_go
+source /usr/share/yunohost/helpers
+
+#=================================================
+# APP "BUILD" (DEPLOYING SOURCES, VENV, COMPILING ETC)
+#=================================================
+# DOWNLOAD, CHECK AND UNPACK SOURCE
+#=================================================
+ynh_script_progression --message="Setting up source files..." --weight=1
+
+ynh_remove_go
+mkdir -p "$install_dir"
+
+git clone https://git.j3s.sh/vore "$install_dir" --quiet
+ynh_add_config --template="../conf/index.tmpl.html" --destination="$install_dir/files/index.tmpl.html"
+
+chmod -R o-rwx "$install_dir"
+chown -R $app:www-data "$install_dir"
+
+#=================================================
+# BUILD APP
+#=================================================
+ynh_script_progression --message="Building app..." --weight=1
+
+ynh_exec_warn_less ynh_install_go --go_version=$go_version
+ynh_use_go
+
+pushd $install_dir
+	ynh_exec_warn_less ynh_exec_as $app CGO_ENABLED=0 $ynh_go build -o $install_dir/
+popd
+
+chmod +x "$install_dir/vore"
+
+#=================================================
+# SYSTEM CONFIGURATION
+#=================================================
+ynh_script_progression --message="Adding system configurations related to $app..." --weight=1
+
+# Create a dedicated NGINX config using the conf/nginx.conf template
+ynh_add_nginx_config
+
+# Create a dedicated systemd config
+ynh_add_systemd_config
+
+yunohost service add $app --description="Multi-tenant feed reader" --log="/var/log/$app/$app.log"
+
+#=================================================
+# GENERIC FINALIZATION
+#=================================================
+# START SYSTEMD SERVICE
+#=================================================
+ynh_script_progression --message="Starting a systemd service..." --weight=1
+
+# Start a systemd service
+ynh_systemd_action --service_name=$app --action="start" --log_path="/var/log/$app/$app.log"
+
+#=================================================
+# END OF SCRIPT
+#=================================================
+ynh_script_progression --message="Installation of $app completed" --last
