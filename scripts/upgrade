@@ -35,6 +35,8 @@ then
 		ynh_exec_warn_less ynh_exec_as $app CGO_ENABLED=0 $ynh_go build -o $install_dir/
 	popd
 
+	ynh_remove_go
+
 	chown -R $app:www-data "$install_dir"
 	chmod +x "$install_dir/vore"
 fi
