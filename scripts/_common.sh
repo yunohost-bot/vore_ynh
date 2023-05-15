@@ -18,8 +18,6 @@ go_version=1.20
 # FUTURE OFFICIAL HELPERS
 #=================================================
 
-#!/bin/bash
-
 ynh_go_try_bash_extension() {
   if [ -x src/configure ]; then
     src/configure && make -C src || {
@@ -265,4 +263,3 @@ ynh_cleanup_go () {
         ynh_secure_remove --file="/etc/profile.d/goenv.sh"
     fi
 }
-
