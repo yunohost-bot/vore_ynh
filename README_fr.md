@@ -16,7 +16,14 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 
 ## Vue d’ensemble
 
-Ceci est une fausse description des fonctionalités de l'app
+Un lecteur de flux simple et multi-locataires
+
+### Client:
+
+- support rss et atom
+- minimal, simple, fiable, rapide
+- rafraîchir vos flux automatiquement
+- afficher une liste chronologique des éléments du flux
 
 
 **Version incluse :** 2023.05.15~ynh1

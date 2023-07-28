@@ -10,7 +10,7 @@ version = "2023.05.15~ynh1"
 maintainers = [""]
 
 [upstream]
-license = "free"
+license = "MIT"
 website = "https://git.j3s.sh/vore"
 demo = "https://vore.website/j3s"
 admindoc = "https://j3s.sh/thought/vore-a-new-rss-feed-reader.html"
@@ -19,7 +19,7 @@ code = "https://git.j3s.sh/vore/tree/main/"
 [integration]
 yunohost = ">= 11.1.19"
 architectures = "all"
-multi_instance = true
+multi_instance = false
 ldap = false
 sso = false
 disk = "50M"
