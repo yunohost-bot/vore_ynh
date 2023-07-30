@@ -7,7 +7,7 @@ description.fr = "Lecteur de flux simple et multi-utilisateurs"
 
 version = "2023.05.15~ynh1"
 
-maintainers = [""]
+maintainers = ["eric_G"]
 
 [upstream]
 license = "MIT"
@@ -17,7 +17,7 @@ admindoc = "https://j3s.sh/thought/vore-a-new-rss-feed-reader.html"
 code = "https://git.j3s.sh/vore/tree/main/"
 
 [integration]
-yunohost = ">= 11.1.19"
+yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = false
 ldap = false
