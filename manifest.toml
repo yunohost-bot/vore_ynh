@@ -5,7 +5,7 @@ name = "Vore"
 description.en = "Simple, multi-tenant feed reader"
 description.fr = "Lecteur de flux simple et multi-utilisateurs"
 
-version = "2023.05.15~ynh2"
+version = "2023.05.15~ynh3"
 
 maintainers = ["eric_G"]
 
