@@ -32,7 +32,7 @@ A simple, multi-tenant feed reader
 
 ## Screenshots
 
-![Screenshot of Vore](./doc/screenshots/example.jpg)
+![Screenshot of Vore](./doc/screenshots/screenshot.png)
 
 ## Documentation and resources
 
