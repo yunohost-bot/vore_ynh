@@ -32,7 +32,7 @@ Un lecteur de flux simple et multi-locataires
 
 ## Captures d’écran
 
-![Capture d’écran de Vore](./doc/screenshots/example.jpg)
+![Capture d’écran de Vore](./doc/screenshots/screenshot.png)
 
 ## Documentations et ressources
 
