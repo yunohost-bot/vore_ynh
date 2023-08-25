@@ -26,13 +26,13 @@ Un lecteur de flux simple et multi-locataires
 - afficher une liste chronologique des éléments du flux
 
 
-**Version incluse :** 2023.05.15~ynh2
+**Version incluse :** 2023.08.09~ynh1
 
 **Démo :** https://vore.website/j3s
 
 ## Captures d’écran
 
-![Capture d’écran de Vore](./doc/screenshots/example.jpg)
+![Capture d’écran de Vore](./doc/screenshots/screenshot.png)
 
 ## Documentations et ressources
 

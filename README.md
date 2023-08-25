@@ -26,13 +26,13 @@ A simple, multi-tenant feed reader
 - display a chronological list of feed items
 
 
-**Shipped version:** 2023.05.15~ynh2
+**Shipped version:** 2023.08.09~ynh1
 
 **Demo:** https://vore.website/j3s
 
 ## Screenshots
 
-![Screenshot of Vore](./doc/screenshots/example.jpg)
+![Screenshot of Vore](./doc/screenshots/screenshot.png)
 
 ## Documentation and resources
 
