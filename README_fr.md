@@ -26,7 +26,7 @@ Un lecteur de flux simple et multi-locataires
 - afficher une liste chronologique des éléments du flux
 
 
-**Version incluse :** 2023.05.15~ynh3
+**Version incluse :** 2023.08.09~ynh1
 
 **Démo :** https://vore.website/j3s
 
