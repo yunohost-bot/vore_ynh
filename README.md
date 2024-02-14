@@ -39,7 +39,7 @@ A simple, multi-tenant feed reader
 * Official app website: <https://git.j3s.sh/vore>
 * Official admin documentation: <https://j3s.sh/thought/vore-a-new-rss-feed-reader.html>
 * Upstream app code repository: <https://git.j3s.sh/vore/tree/main/>
-* YunoHost documentation for this app: <https://yunohost.org/app_vore>
+* YunoHost Store: <https://apps.yunohost.org/app/vore>
 * Report a bug: <https://github.com/YunoHost-Apps/vore_ynh/issues>
 
 ## Developer info
