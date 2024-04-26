@@ -36,11 +36,11 @@ Un lecteur de flux simple et multi-locataires
 
 ## Documentations et ressources
 
-* Site officiel de l’app : <https://git.j3s.sh/vore>
-* Documentation officielle de l’admin : <https://j3s.sh/thought/vore-a-new-rss-feed-reader.html>
-* Dépôt de code officiel de l’app : <https://git.j3s.sh/vore/tree/main/>
-* YunoHost Store: <https://apps.yunohost.org/app/vore>
-* Signaler un bug : <https://github.com/YunoHost-Apps/vore_ynh/issues>
+- Site officiel de l’app : <https://git.j3s.sh/vore>
+- Documentation officielle de l’admin : <https://j3s.sh/thought/vore-a-new-rss-feed-reader.html>
+- Dépôt de code officiel de l’app : <https://git.j3s.sh/vore/tree/main/>
+- YunoHost Store : <https://apps.yunohost.org/app/vore>
+- Signaler un bug : <https://github.com/YunoHost-Apps/vore_ynh/issues>
 
 ## Informations pour les développeurs
 

@@ -9,7 +9,7 @@ It shall NOT be edited by hand.
 
 [![Install Vore with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=vore)
 
-*[Read this README is other languages.](./ALL_README.md)*
+*[Read this README in other languages.](./ALL_README.md)*
 
 > *This package allows you to install Vore quickly and simply on a YunoHost server.*  
 > *If you don't have YunoHost, please consult [the guide](https://yunohost.org/install) to learn how to install it.*
@@ -36,11 +36,11 @@ A simple, multi-tenant feed reader
 
 ## Documentation and resources
 
-* Official app website: <https://git.j3s.sh/vore>
-* Official admin documentation: <https://j3s.sh/thought/vore-a-new-rss-feed-reader.html>
-* Upstream app code repository: <https://git.j3s.sh/vore/tree/main/>
-* YunoHost Store: <https://apps.yunohost.org/app/vore>
-* Report a bug: <https://github.com/YunoHost-Apps/vore_ynh/issues>
+- Official app website: <https://git.j3s.sh/vore>
+- Official admin documentation: <https://j3s.sh/thought/vore-a-new-rss-feed-reader.html>
+- Upstream app code repository: <https://git.j3s.sh/vore/tree/main/>
+- YunoHost Store: <https://apps.yunohost.org/app/vore>
+- Report a bug: <https://github.com/YunoHost-Apps/vore_ynh/issues>
 
 ## Developer info
 
