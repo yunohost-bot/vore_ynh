@@ -26,7 +26,7 @@ A simple, multi-tenant feed reader
 - display a chronological list of feed items
 
 
-**Shipped version:** 2023.08.09~ynh1
+**Shipped version:** 2023.08.09~ynh2
 
 **Demo:** <https://vore.website/j3s>
 

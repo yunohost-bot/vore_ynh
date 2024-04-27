@@ -26,7 +26,7 @@ A simple, multi-tenant feed reader
 - display a chronological list of feed items
 
 
-**分发版本：** 2023.08.09~ynh1
+**分发版本：** 2023.08.09~ynh2
 
 **演示：** <https://vore.website/j3s>
 
