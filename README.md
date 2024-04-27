@@ -9,7 +9,7 @@ It shall NOT be edited by hand.
 
 [![Install Vore with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=vore)
 
-*[Read this README is other languages.](./ALL_README.md)*
+*[Read this README in other languages.](./ALL_README.md)*
 
 > *This package allows you to install Vore quickly and simply on a YunoHost server.*  
 > *If you don't have YunoHost, please consult [the guide](https://yunohost.org/install) to learn how to install it.*
@@ -26,7 +26,7 @@ A simple, multi-tenant feed reader
 - display a chronological list of feed items
 
 
-**Shipped version:** 2023.08.09~ynh1
+**Shipped version:** 2023.08.09~ynh2
 
 **Demo:** <https://vore.website/j3s>
 
