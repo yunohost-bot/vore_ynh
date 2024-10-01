@@ -5,7 +5,7 @@ Il NE doit PAS être modifié à la main.
 
 # Vore pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/vore.svg)](https://dash.yunohost.org/appci/app/vore) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/vore.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/vore.maintain.svg)
+[![Niveau d’intégration](https://dash.yunohost.org/integration/vore.svg)](https://ci-apps.yunohost.org/ci/apps/vore/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/vore.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/vore.maintain.svg)
 
 [![Installer Vore avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=vore)
 

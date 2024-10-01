@@ -5,7 +5,7 @@ No se debe editar a mano.
 
 # Vore para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/vore.svg)](https://dash.yunohost.org/appci/app/vore) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/vore.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/vore.maintain.svg)
+[![Nivel de integración](https://dash.yunohost.org/integration/vore.svg)](https://ci-apps.yunohost.org/ci/apps/vore/) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/vore.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/vore.maintain.svg)
 
 [![Instalar Vore con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=vore)
 
@@ -44,7 +44,7 @@ A simple, multi-tenant feed reader
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/vore_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/vore_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 
