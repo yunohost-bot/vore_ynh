@@ -4,8 +4,6 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
-# APP "BUILD" (DEPLOYING SOURCES, VENV, COMPILING ETC)
-#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression "Setting up source files..."
@@ -13,10 +11,9 @@ ynh_script_progression "Setting up source files..."
 mkdir -p "$install_dir"
 
 ynh_hide_warnings git clone https://git.j3s.sh/vore "$install_dir" --quiet
+
 ynh_config_add --template="index.tmpl.html" --destination="$install_dir/files/index.tmpl.html"
 
-#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chmod -R o-rwx "$install_dir"
-#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown -R $app:www-data "$install_dir"
 #=================================================
 # BUILD APP
 #=================================================
@@ -29,6 +26,7 @@ pushd $install_dir
 popd
 
 ynh_go_remove
+
 chmod +x "$install_dir/vore"
 
 #=================================================
@@ -36,10 +34,8 @@ chmod +x "$install_dir/vore"
 #=================================================
 ynh_script_progression "Adding system configurations related to $app..."
 
-# Create a dedicated NGINX config using the conf/nginx.conf template
 ynh_config_add_nginx
 
-# Create a dedicated systemd config
 ynh_config_add_systemd
 
 yunohost service add $app --description="Multi-tenant feed reader" --log="/var/log/$app/$app.log"
@@ -49,7 +45,6 @@ yunohost service add $app --description="Multi-tenant feed reader" --log="/var/l
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-# Start a systemd service
 ynh_systemctl --service=$app --action="start"
 
 #=================================================
