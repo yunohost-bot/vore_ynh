@@ -21,7 +21,7 @@ pushd $install_dir
 	git config --system --add safe.directory $install_dir
 	ynh_hide_warnings git pull https://git.j3s.sh/vore --quiet
 	ynh_config_add --template="index.tmpl.html" --destination="$install_dir/files/index.tmpl.html"
-	ynh_hide_warnings ynh_exec_as_app CGO_ENABLED=0 go build -o $install_dir/
+	ynh_hide_warnings ynh_exec_as_app CGO_ENABLED=0 GOFLAGS=-buildvcs=false go build -o $install_dir/
 popd
 
 ynh_go_remove
