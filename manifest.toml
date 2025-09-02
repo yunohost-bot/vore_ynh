@@ -17,7 +17,7 @@ admindoc = "https://j3s.sh/thought/vore-a-new-rss-feed-reader.html"
 code = "https://git.j3s.sh/vore/tree/main/"
 
 [integration]
-yunohost = ">= 12.0.9"
+yunohost = ">= 12.1.17"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = false
@@ -49,3 +49,6 @@ ram.runtime = "50M"
 
     [resources.permissions]
     main.url = "/"
+
+    [resources.go]
+    version = "1.22"

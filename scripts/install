@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source _common.sh
+
 source /usr/share/yunohost/helpers
 
 #=================================================
@@ -19,13 +19,13 @@ ynh_config_add --template="index.tmpl.html" --destination="$install_dir/files/in
 #=================================================
 ynh_script_progression "Building app..."
 
-ynh_go_install
+#REMOVEME? ynh_go_install
 
 pushd $install_dir
 	ynh_hide_warnings ynh_exec_as_app CGO_ENABLED=0 GOFLAGS=-buildvcs=false go build -o $install_dir/
 popd
 
-ynh_go_remove
+#REMOVEME? ynh_go_remove
 
 chmod +x "$install_dir/vore"
 
